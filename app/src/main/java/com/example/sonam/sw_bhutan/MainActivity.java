@@ -1,8 +1,12 @@
 package com.example.sonam.sw_bhutan;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,9 +16,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    /* for bottom navigation and its page */
+    private BottomNavigationView mBottomNav;
+    private FrameLayout mMainFrame;
+
+    private EventFragment eventFragment;
+    private RegistrationFragment registrationFragment;
+    private HomeFragment homeFragment;
+    private SponsorFragment sponsorFragment;
+    private MentorFragment mentorFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +47,51 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        /* for bottom navigation and its pages */
+        mBottomNav = (BottomNavigationView) findViewById(R.id.bottom_nav);
+        mMainFrame = (FrameLayout) findViewById(R.id.mainframe);
+
+        eventFragment = new EventFragment();
+        registrationFragment = new RegistrationFragment();
+        homeFragment = new HomeFragment();
+        sponsorFragment = new SponsorFragment();
+        mentorFragment = new MentorFragment();
+
+
+        mBottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+
+                    case R.id.bottom_events:
+                        setFragment(eventFragment);
+                        return true;
+                    case R.id.bottom_reg:
+                        setFragment(registrationFragment);
+                        return true;
+                    case R.id.bottom_home:
+                        setFragment(homeFragment);
+                        return true;
+                    case R.id.bottom_sponsor:
+                        setFragment(sponsorFragment);
+                        return true;
+                    case R.id.bottom_mentors:
+                        setFragment(mentorFragment);
+                        return true;
+
+                        default:
+                            return  false;
+                }
+
+            }
+
+            private void setFragment(Fragment fragment) {
+                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.mainframe, fragment);
+                fragmentTransaction.commit();
+            }
+        });
     }
 
     @Override

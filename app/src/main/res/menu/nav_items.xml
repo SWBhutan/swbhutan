@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_events"
+        android:icon="@drawable/ievent"
+        android:title="@string/nav_events" />
+    <item
+        android:id="@+id/bottom_reg"
+        android:icon="@drawable/iregistration"
+        android:title="@string/nav_reg" />
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/ihome"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/bottom_sponsor"
+        android:icon="@drawable/isponsors"
+        android:title="@string/nav_spon" />
+    <item
+        android:id="@+id/bottom_mentors"
+        android:icon="@drawable/imentor"
+        android:title="@string/nav_mentor" />
+</menu>
