@@ -15,5 +15,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-
+    <!-- mentor fragment-->
+    <string name="mentor_1">Sonam choki \n Regional manager APAC(South and Central Asia), Techstars </string>
+    <string name="mentor_2">Sonam choki \n Regional manager APAC(South and Central Asia), Techstars </string>
+    <string name="mentor_3">Sonam choki \n Regional manager APAC(South and Central Asia), Techstars </string>
+    <string name="mentor_4">Sonam choki \n Regional manager APAC(South and Central Asia), Techstars </string>
 </resources>
