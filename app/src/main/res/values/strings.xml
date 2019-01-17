@@ -20,4 +20,9 @@
     <string name="mentor_2">Sonam choki \n Regional manager APAC(South and Central Asia), Techstars </string>
     <string name="mentor_3">Sonam choki \n Regional manager APAC(South and Central Asia), Techstars </string>
     <string name="mentor_4">Sonam choki \n Regional manager APAC(South and Central Asia), Techstars </string>
+    <string name="title_activity_event_fragment">event_fragment</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.sonam.sw_bhutan;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -129,18 +130,36 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        switch (id){
+            case R.id.organisers:
+                Intent intent=new Intent(MainActivity.this, organisers.class);
+                startActivity(intent);
+                break;
 
-        if (id == R.id.nav_camera) {
+            case R.id.prize:
+                break;
+            case R.id.contactus:
+                break;
+
+            case R.id.nav_share:
+                break;
+            case R.id.nav_rate:
+                break;
+        }
+        /*
+        if (id == R.id.organisers) {
+            Intent intent = new Intent(MainActivity.this, organisers.class);
+            startActivity(intent);
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.prize) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.contactus) {
 
         } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_rate) {
 
-        }
+        } */
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
