@@ -11,9 +11,25 @@
     <string name="nav_home">Home</string>
     <string name="nav_spon">Sponsors</string>
     <string name="nav_mentor">Mentors</string>
+    <string name="select_occupation">Select Occupaton:</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nationalReg">About Techstars Startup Weekend:
+        Techstars Startup Weekends are 54-hours events designed to provide superior
+        experimential education for technical and non-technical enterpreneurs. Beginning
+        with Firday night pitches and continuing through brainstroming, budiness plan
+        developpment and basic prototyping creation. Techstars Startup Weekends
+        culminate in sunday night demos and presentations. Participants create working
+        startup during the events and collaborate with likeminded individuals outside of
+        their daily networks. All teams hear talks by industry leaders and recives valuable
+        feedbacks from local enterpreneuers. The weekends is centered around action,  inovation,
+        and education. Weather you are looking for feedback on idea, a co-founder, specific skills
+        sets, or team to help you execute. Techstars Startup Weekends are the perfect enviroment
+        in which to test your idea and take the first steeps towards launching your own ideas.
+
+    </string>
 
 
 </resources>
