@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".National">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/regbag">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginRight="30dp"
+           android:background="#ffffff"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               android:text="Bhutan National Techstars Startup Weekend Bhutan 2019"
+               android:textColor="#000000"
+               android:textSize="30dp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="30dp"
+               android:layout_marginRight="20dp"
+               android:text="For all event details Visit"
+               android:textColor="#000000"
+               android:textSize="18dp" />
+
+           <TextView
+               android:id="@+id/eventddetail"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="0dp"
+               android:layout_marginRight="10dp"
+               android:text="[http://communities.techstars.com/events/12383]"
+               android:textColor="#0217fd"
+               android:textSize="18dp" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="30dp"
+               android:layout_marginRight="20dp"
+               android:text="For any questions about the event, please feel free to reach us at"
+               android:textColor="#000000"
+               android:textSize="18dp" />
+
+           <TextView
+               android:id="@+id/evenquestion"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="0dp"
+               android:layout_marginRight="10dp"
+               android:text="[BHUTANMEGA@startupweekend.org]"
+               android:textColor="#0217fd"
+               android:textSize="18dp" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="30dp"
+               android:layout_marginRight="20dp"
+               android:text="@string/nationalReg"
+               android:textColor="#000000"
+               android:textSize="18dp" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="40dp"
+               android:layout_marginTop="20dp"
+               android:text="*All fields all compulsory*"
+               android:textColor="#fc0404"
+               android:textSize="24dp"
+               android:textStyle="italic" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:orientation="horizontal"
+               android:weightSum="3">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_weight="1"
+                   android:text="First Name:"
+                   android:textColor="#000000"
+                   android:textSize="24dp"
+                   android:textStyle="normal" />
+
+               <EditText
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:hint="Your answer"
+                   android:inputType="text"
+                   android:textColor="#000000"
+                   android:textSize="20dp" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:orientation="horizontal"
+               android:weightSum="3">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_weight="1"
+                   android:text="Last Name:"
+                   android:textColor="#000000"
+                   android:textSize="24dp"
+                   android:textStyle="normal" />
+
+               <EditText
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:hint="Your answer"
+                   android:inputType="text"
+                   android:textColor="#000000"
+                   android:textSize="20dp" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:orientation="horizontal"
+               android:weightSum="3">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_weight="1"
+                   android:text="Email-ID:"
+                   android:textColor="#000000"
+                   android:textSize="24dp"
+                   android:textStyle="normal" />
+
+               <EditText
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:hint="Your answer"
+                   android:inputType="textEmailAddress"
+                   android:textColor="#000000"
+                   android:textSize="20dp" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:orientation="horizontal"
+               android:weightSum="3">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_weight="1"
+                   android:text="Age:"
+                   android:textColor="#000000"
+                   android:textSize="24dp"
+                   android:textStyle="normal" />
+
+               <EditText
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:hint="Your answer"
+                   android:inputType="number"
+                   android:textColor="#000000"
+                   android:textSize="20dp" />
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="20dp"
+               android:text="Profile*"
+               android:textColor="#000000"
+               android:textSize="26dp"
+               android:textStyle="bold" />
+
+           <RadioGroup
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="5dp"
+               android:orientation="vertical">
+               76re\
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Developer"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Designer"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Business"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Industry Expert"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+           </RadioGroup>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="20dp"
+               android:text="Gender*"
+               android:textColor="#000000"
+               android:textSize="26dp"
+               android:textStyle="bold" />
+
+           <RadioGroup
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="5dp"
+               android:orientation="vertical">
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Male"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Female"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Rather not say"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Other"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+           </RadioGroup>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="20dp"
+               android:text="What is the highest degree or level of school you have completed? If currently enrolled, highest degree recived."
+               android:textColor="#000000"
+               android:textSize="26dp"
+               android:textStyle="bold" />
+
+           <RadioGroup
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="5dp"
+               android:orientation="vertical">
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="No schooling completed"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Only high school, No diploma"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="High school graduate, diploma or other equivalent"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Scome college credit, no degree"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Trade/Technical/vocational training"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Associate degree"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Bachelor's degree"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Master's degree"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Professional degree"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Doctorate degree"
+                   android:textColor="#0d0d0e"
+                   android:textSize="20dp" />
+
+           </RadioGroup>
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="40dp"
+               android:layout_marginTop="20dp"
+               android:paddingLeft="10dp"
+               android:paddingRight="10dp"
+               android:background="@drawable/buttonbg"
+               android:text="SUBMIT"
+               android:textColor="#ffffff"
+               android:textSize="24dp" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="*Fill all form before submit*"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="20dp"
+               android:textSize="20dp"
+               android:textStyle="italic"
+              android:layout_marginLeft="40dp"
+               android:textColor="#fd0e01"/>
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+</ScrollView>
