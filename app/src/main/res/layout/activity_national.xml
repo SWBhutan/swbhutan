@@ -40,7 +40,7 @@
                android:layout_marginRight="20dp"
                android:text="For all event details Visit"
                android:textColor="#000000"
-               android:textSize="18dp" />
+               android:textSize="18sp" />
 
            <TextView
                android:id="@+id/eventddetail"
@@ -51,7 +51,7 @@
                android:layout_marginRight="10dp"
                android:text="[http://communities.techstars.com/events/12383]"
                android:textColor="#0217fd"
-               android:textSize="18dp" />
+               android:textSize="18sp" />
 
            <TextView
                android:layout_width="match_parent"
@@ -61,7 +61,7 @@
                android:layout_marginRight="20dp"
                android:text="For any questions about the event, please feel free to reach us at"
                android:textColor="#000000"
-               android:textSize="18dp" />
+               android:textSize="18sp" />
 
            <TextView
                android:id="@+id/evenquestion"
@@ -72,7 +72,7 @@
                android:layout_marginRight="10dp"
                android:text="[BHUTANMEGA@startupweekend.org]"
                android:textColor="#0217fd"
-               android:textSize="18dp" />
+               android:textSize="18sp" />
 
            <TextView
                android:layout_width="match_parent"
@@ -91,7 +91,7 @@
                android:layout_marginTop="20dp"
                android:text="*All fields all compulsory*"
                android:textColor="#fc0404"
-               android:textSize="24dp"
+               android:textSize="24sp"
                android:textStyle="italic" />
 
            <LinearLayout
@@ -112,11 +112,13 @@
                    android:textStyle="normal" />
 
                <EditText
+                   android:id="@+id/fname"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_weight="2"
                    android:hint="Your answer"
                    android:inputType="text"
+                   android:imeOptions="actionDone"
                    android:textColor="#000000"
                    android:textSize="20dp" />
 
@@ -140,11 +142,13 @@
                    android:textStyle="normal" />
 
                <EditText
+                   android:id="@+id/lname"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_weight="2"
                    android:hint="Your answer"
                    android:inputType="text"
+                   android:imeOptions="actionDone"
                    android:textColor="#000000"
                    android:textSize="20dp" />
 
@@ -168,11 +172,13 @@
                    android:textStyle="normal" />
 
                <EditText
+                   android:id="@+id/email"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_weight="2"
                    android:hint="Your answer"
                    android:inputType="textEmailAddress"
+                   android:imeOptions="actionDone"
                    android:textColor="#000000"
                    android:textSize="20dp" />
 
@@ -196,11 +202,13 @@
                    android:textStyle="normal" />
 
                <EditText
+                   android:id="@+id/age"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_weight="2"
                    android:hint="Your answer"
                    android:inputType="number"
+                   android:imeOptions="actionDone"
                    android:textColor="#000000"
                    android:textSize="20dp" />
 
@@ -213,18 +221,19 @@
                android:layout_marginTop="20dp"
                android:text="Profile*"
                android:textColor="#000000"
-               android:textSize="26dp"
+               android:textSize="26sp"
                android:textStyle="bold" />
 
            <RadioGroup
+               android:id="@+id/profile"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_marginLeft="30dp"
                android:layout_marginTop="5dp"
                android:orientation="vertical">
-               76re\
 
                <RadioButton
+                   android:id="@+id/developer"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Developer"
@@ -232,6 +241,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/designer"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Designer"
@@ -239,6 +249,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/business"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Business"
@@ -246,6 +257,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/industry"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Industry Expert"
@@ -261,10 +273,11 @@
                android:layout_marginTop="20dp"
                android:text="Gender*"
                android:textColor="#000000"
-               android:textSize="26dp"
+               android:textSize="26sp"
                android:textStyle="bold" />
 
            <RadioGroup
+               android:id="@+id/gender"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_marginLeft="30dp"
@@ -272,6 +285,7 @@
                android:orientation="vertical">
 
                <RadioButton
+                   android:id="@+id/male"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Male"
@@ -279,6 +293,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/female"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Female"
@@ -286,6 +301,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/rather"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Rather not say"
@@ -293,6 +309,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/other"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Other"
@@ -312,6 +329,7 @@
                android:textStyle="bold" />
 
            <RadioGroup
+               android:id="@+id/study"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_marginLeft="30dp"
@@ -319,6 +337,7 @@
                android:orientation="vertical">
 
                <RadioButton
+                   android:id="@+id/noschool"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="No schooling completed"
@@ -326,6 +345,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/nodiploma"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Only high school, No diploma"
@@ -333,6 +353,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/diploma"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="High school graduate, diploma or other equivalent"
@@ -340,6 +361,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/nodegree"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Scome college credit, no degree"
@@ -347,6 +369,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/training"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Trade/Technical/vocational training"
@@ -354,6 +377,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/assdegree"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Associate degree"
@@ -361,6 +385,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/bacdegree"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Bachelor's degree"
@@ -368,6 +393,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/masdegree"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Master's degree"
@@ -375,6 +401,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/prodegree"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Professional degree"
@@ -382,6 +409,7 @@
                    android:textSize="20dp" />
 
                <RadioButton
+                   android:id="@+id/docdegree"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Doctorate degree"
@@ -391,6 +419,7 @@
            </RadioGroup>
 
            <Button
+               android:id="@+id/submit"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:layout_marginLeft="40dp"

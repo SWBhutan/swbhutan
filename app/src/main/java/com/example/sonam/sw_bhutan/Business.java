@@ -1,5 +1,6 @@
 package com.example.sonam.sw_bhutan;
 
+import android.content.Intent;
 import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -14,56 +17,98 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class Business extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    Spinner occspinner;
-    Spinner locspinner;
-    ArrayList<String> data=new ArrayList<String>();
-    ArrayList<String> data2=new ArrayList<String >();
-    ArrayAdapter <String> adapter;
-    ArrayAdapter <String> adapter2;
-    TextView textView;
-    TextView textView2;
-    Button canbtn;
-    Button regbtn;
+public class Business extends AppCompatActivity {
+
+    Button subbtn;
+    EditText name;
+    EditText cid;
+    EditText phone;
+    EditText email;
+    RadioGroup occupation;
+    RadioButton radOccupation;
+    RadioGroup location;
+    String str_occupation;
+    String str_location;
+    int checked;
+    int checked2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_business);
-        textView = findViewById(R.id.edit3);
-        textView2=findViewById(R.id.edit4);
-        textView.setPaintFlags(textView.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-        textView2.setPaintFlags(textView.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
-        occspinner=findViewById(R.id.occSpinner);
-        locspinner=findViewById(R.id.locSpinner);
-        data.add("Student");
-        data.add("Employed");
-        data.add("Looking for job");
-        data2.add("Gaeddu College");
-        data2.add("CST-Phuentsholing");
-        data2.add("JNEC-Deothang");
-        data2.add("Sherubtse College");
-        data2.add("CLCS-Trongsa");
-        data2.add("CNR-Punakha");
+        name=findViewById(R.id.name);
+        cid=findViewById(R.id.cid);
+        phone=findViewById(R.id.phone);
+        email=findViewById(R.id.email);
+        subbtn=findViewById(R.id.submitbt);
+        occupation=findViewById(R.id.occupation);
+        location=findViewById(R.id.location);
 
-        adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_single_choice, data);
-        adapter2=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_single_choice, data2);
-        occspinner.setAdapter(adapter);
-        locspinner.setAdapter(adapter2);
 
-        canbtn=findViewById(R.id.cancelbt);
-        regbtn=findViewById(R.id.registerbt);
+
+    }
+    private void Onsubmit(View view){
+        String str_name= name.getText().toString();
+        String  str_cid=cid.getText().toString();
+        String str_phone=phone.getText().toString();
+        String str_emal=email.getText().toString();
+        occupation.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                checked = occupation.indexOfChild(findViewById(checkedId));
+                switch (checked){
+                    case 0:
+                        str_occupation="student";
+                        break;
+                    case 1:
+                        str_occupation="employeed";
+                        break;
+                    case 2:
+                        str_occupation="Looking for job";
+                        break;
+                    default:
+                        str_occupation="None of above";
+                        break;
+                }
+            }
+        });
+        location.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                checked2=location.indexOfChild(findViewById(checkedId));
+                switch (checked2){
+                    case 0:
+                        str_location="Gaeddu College";
+                        break;
+                    case 1:
+                        str_location="CST-Phuentsholing";
+                        break;
+                    case 2:
+                        str_location="JNEC-Deothang";
+                        break;
+                    case 3:
+                        str_location="Sherubtse College";
+                        break;
+
+                    case 4:
+                        str_location="CLCS-Trongsa";
+                        break;
+                    case 5:
+                        str_location="CNR-Punakha";
+                        break;
+                    default:
+                        str_occupation="None of above";
+                        break;
+                }
+            }
+        });
+
+        String type="submit";
+
+        BackgroundWorker backgroundWorker=new BackgroundWorker(this);
+        backgroundWorker.execute(type, str_name, str_cid, str_phone, str_emal,str_occupation, str_location);
 
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String text=parent.getItemAtPosition(position).toString();
-        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-    }
 }

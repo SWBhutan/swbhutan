@@ -1,193 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="9"
     tools:context=".Business">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Note:"
-            android:layout_marginLeft="5dp"
-            android:textColor="#8704f2"
-            android:textSize="16sp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:text="All fields are mandatory."
-            android:textColor="#8704f2"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Notice:"
-            android:layout_marginLeft="5dp"
-            android:textColor="#FFFC0112"
-            android:textSize="16sp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:text="Registration are closed for pitching season."
-            android:textColor="#FFFC0112"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:paddingStart="5dp"
-        android:paddingLeft="5dp"
-        android:layout_weight="7"
-        android:weightSum="7"
-        >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/regbag">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#ffffff"
+           android:orientation="vertical"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginRight="30dp">
 
-        <EditText
-            android:id="@+id/edit1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="16sp"
-            android:inputType="text"
-            android:hint="Name"/>
-        <EditText
-            android:id="@+id/edit2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Citizenship ID"
-            android:inputType="number"
-            android:textSize="16sp"
-            android:layout_weight="1"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:weightSum="3"
-            android:paddingTop="20dp"
-            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/edit3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:inputType="text"
-                android:textSize="16sp"
-                android:layout_weight="2"
-                android:text="@string/select_occupation">
-            </TextView>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Notice:"
+                   android:textStyle="bold"
+                   android:textColor="#0217fd"
+                   android:textSize="24sp"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="22sp"
+                   android:textStyle="italic"
+                   android:layout_marginLeft="5dp"
+                   android:text="Registration are closed for pitching season*"
+                   android:textColor="#0217fd"/>
+           </LinearLayout>
 
-            <Spinner
-                android:id="@+id/occSpinner"
-                android:textSize="16sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                >
-            </Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:weightSum="3"
-            android:paddingTop="20dp"
-            android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="50dp"
+               android:textSize="22sp"
+               android:textStyle="italic"
+               android:text="All fields all compulsory*"
+               android:textColor="#f21004"/>
 
-            <TextView
-                android:id="@+id/edit4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:inputType="text"
-                android:textSize="16sp"
-                android:layout_weight="2"
-                android:text="Select Pitching location">
-            </TextView>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="20dp">
 
-            <Spinner
-                android:id="@+id/locSpinner"
-                android:textSize="20sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                >
-            </Spinner>
-        </LinearLayout>
-        <EditText
-            android:id="@+id/edit5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="16sp"
-            android:inputType="number"
-            android:hint="Mobile/Phone"/>
-        <EditText
-            android:id="@+id/edit6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="textEmailAddress"
-            android:textSize="16sp"
-            android:hint="Email"/>
+               <EditText
+                   android:id="@+id/name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="20sp"
+                   android:textColor="#000000"
+                   android:inputType="text"
+                   android:imeOptions="actionDone"
+                   android:hint="Name"/>
+               <EditText
+                   android:id="@+id/cid"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Citizenship ID"
+                   android:inputType="number"
+                   android:textSize="20sp"
+                   android:layout_marginTop="5dp"
+                   android:imeOptions="actionDone"
+                   android:textColor="#000000"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:weightSum="2">
+               <EditText
+                   android:id="@+id/phone"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="20sp"
+                   android:inputType="number"
+                   android:hint="Mobile/Phone"
+                   android:textColor="#000000"
+                   android:imeOptions="actionDone"
+                   android:layout_marginTop="5dp"
+                   />
+               <EditText
+                   android:id="@+id/email"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textEmailAddress"
+                   android:textSize="20sp"
+                   android:layout_marginTop="5dp"
+                   android:textColor="#000000"
+                   android:imeOptions="actionDone"
+                   android:hint="Email"/>
 
-            <Button
-                android:id="@+id/cancelbt"
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:text="CANCEL"
-                android:paddingRight="15dp"
-                android:paddingLeft="15dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
-                android:textSize="20sp"
-                android:textColor="#ffffff"
-                android:layout_weight="1"
-                android:background="@drawable/buttonbg"
-                />
-            <Button
-                android:id="@+id/registerbt"
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:text="REGISTER"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:paddingRight="15dp"
-                android:paddingLeft="15dp"
-                android:textSize="20sp"
-                android:textColor="#ffffff"
-                android:layout_weight="1"
-                android:background="@drawable/buttonbg"
-                />
-        </LinearLayout>
+               <TextView
+                   android:id="@+id/edit3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:inputType="text"
+                   android:textSize="26sp"
+                   android:textColor="#000000"
+                   android:text="@string/select_occupation">
+               </TextView>
 
-    </LinearLayout>
+               <RadioGroup
+                   android:id="@+id/occupation"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginTop="5dp"
+                   android:orientation="vertical">
 
-</LinearLayout>
+                   <RadioButton
+                       android:id="@+id/student"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Student"
+                       android:textColor="#0d0d0e"
+                       android:textSize="20dp" />
+
+                   <RadioButton
+                       android:id="@+id/employed"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Employed"
+                       android:textColor="#0d0d0e"
+                       android:textSize="20dp" />
+
+                   <RadioButton
+                       android:id="@+id/job"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Looking for job"
+                       android:textColor="#0d0d0e"
+                       android:textSize="20dp" />
+
+               </RadioGroup>
+
+               <TextView
+                   android:id="@+id/edit4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:inputType="text"
+                   android:textSize="26sp"
+                   android:textColor="#000000"
+                   android:text="Select Pitching location">
+               </TextView>
+
+               <RadioGroup
+                   android:id="@+id/location"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginTop="5dp"
+                   android:orientation="vertical">
+
+                   <RadioButton
+                       android:id="@+id/gaeddu"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Gaeddu College"
+                       android:textColor="#0d0d0e"
+                       android:textSize="20dp" />
+
+                   <RadioButton
+                       android:id="@+id/cst"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="CST-Phuentsholing"
+                       android:textColor="#0d0d0e"
+                       android:textSize="20dp" />
+
+                   <RadioButton
+                       android:id="@+id/jnec"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="JNEC-Deothang"
+                       android:textColor="#0d0d0e"
+                       android:textSize="20dp" />
+                   <RadioButton
+                       android:id="@+id/sherubtse"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Sherubtse College"
+                       android:textColor="#0d0d0e"
+                       android:textSize="20dp" />
+
+                   <RadioButton
+                       android:id="@+id/clcs"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="CLCS-Trongsa"
+                       android:textColor="#0d0d0e"
+                       android:textSize="20dp" />
+
+                   <RadioButton
+                       android:id="@+id/cnr"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="CNR-Punakha"
+                       android:textColor="#0d0d0e"
+                       android:textSize="20dp" />
+
+
+               </RadioGroup>
+               <Button
+                   android:id="@+id/submitbt"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Submit"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginTop="20dp"
+                   android:textSize="24sp"
+                   android:textColor="#ffffff"
+                   android:background="@drawable/buttonbg"
+                   android:onClick="Onsubmit"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:textSize="22sp"
+                   android:textStyle="italic"
+                   android:text="*Fill all Forms before submit*"
+                   android:textColor="#f21004"/>
+
+
+           </LinearLayout>
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+</ScrollView>
