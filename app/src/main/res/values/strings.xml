@@ -12,6 +12,15 @@
     <string name="nav_spon">Sponsors</string>
     <string name="nav_mentor">Mentors</string>
 
+
+    <string name="who_are_you">Come up with a one liner of who you are. You don’t have enough time to tell your whole background story. This one liner should include your name and what do you do. Take a pen and paper and write this down. Now add some humour to it to make your audience remember who you are. For example, I usually say “Hi, I’m Khizar. Developer by profession and crazy by nature”. This kind of sentence will generate laughter around the room and will also draw your audience’s attention to what you’re going to say next. This will only take you less than 5 seconds if you execute it well.</string>
+    <string name="problem">This part is as important as your idea. Describe the problem that you’re trying to solve. If you don’t have a problem to solve, you might lose interest from other participants. Think about what problem you’re trying to solve and write it on paper. Narrow it down to 3-5 sentences. Boom! you have it. practice to execute the description to your problem in under 20 seconds.</string>
+    <string name="solution">This is the part everyone is waiting for and this is the part everyone will remember the most from your pitch so start it with a bang. Present it to your audience like it is the next big thing. I once heard someone pitch “I want to launch a Rocket”. a bit ambitious but tell me, would you forget that pitch easily? So once again write down your idea on paper and narrow it down to 2-3 sentences. Now add an explosive element to it that everyone will remember. Practice to execute it under 25 seconds.</string>
+    <string name="what_do_you_need">You’re pitching at the startup weekend podium so you need to attract team members to get your idea off the ground. This is also an important part so don’t forget it. Just like the introduction, keep it a one liner with an element of enthusiasm to it. For example “I need developers, designers and dreamers like me to make it possible”. Not bad is it? Keep it under 5 seconds as well.</string>
+    <string name="sum_up">Now combine the whole pitch and try to execute it under 50 seconds. What do you need another 10 seconds for? Once you pitch your pitch will be on a voting ballot which will also have a number on it. So use those 10 seconds to say out loud your pitch number. Something simple like “I’m pitch number 22 and will be looking forward to your love in form of votes, Cheers”.
+Practice makes perfect, so practice your pitch in front of a mirror, friends or even your dog to make it perfect.</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
